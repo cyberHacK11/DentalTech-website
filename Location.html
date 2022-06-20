@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="D:/web1/assets/style.css">
+	<script src="https://kit.fontawesome.com/8c5f8983b2.js" crossorigin="anonymous"></script>
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<nav>
+			
+			<input type="checkbox" id="checkbox-menu">
+			<label for="checkbox-menu">
+				<ul class="menu touch">
+					<li><a class="logo" href="index.html">DentalTech</a></li>
+					<li><a  href="#">About</a></li>
+					<li><a  href="projects.html">Projects</a></li>
+                    <li><a class="contacts"  href="contact.html">Contact Us</a></li>
+                     <li><a href="Location.html">Location</a></li>
+                    <li><a  href="Join.html">Join Us</a></li>
+				</ul>
+				<span class="toggle">☰</span>
+			</label>
+
+
+		</nav>
+
+      
+	
+	</header>
+	<main>
+		<h1>Location</h1>
+		<div id="map"></div>
+	</main>
+		<footer>
+			<div class="wrapper">
+			<div class="footer-block">
+				<div class="footer-logo">
+                    <h3>DentalTech</h3>
+                    <h3>We Always Welcome Customers</h3>
+                    <div class="footer-search">
+                    <input type="text" plaseholder="Subscribe To Our Newsletter">      
+				</div>
+			</div>
+			
+			</div>
+			<hr>
+			<div class="footer-links">
+				<div class="footer-links-logo">
+					<h4>DentalTech</h4>
+				</div>
+				<div class="footer-link">
+					<p>project</p>
+					<a href="#"></a>
+					<a href="#"></a>
+			</div>
+			<div class="footer-link">
+					<p>Comunity</p>
+					<a href="#"><i class="fab fa-telegram"></i>Telegram</a>
+					<a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+					<a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+					<a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+			</div>
+			<div class="footer-link">
+					<p>Company</p>
+					<a href="#">About Us</a>
+					<a href="#">Contact Us</a>
+			</div>
+			<div class="footer-link">
+					<p>Support</p>
+					<a href="#">FAQ</a>
+					<a href="#"></a>
+					<a href="#"></a>
+
+			</div>
+		</div>
+		</footer>
+
+<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 43.8595546, lng: 46.7115136 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 17,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk7-kXuHagP8vWhmYvw4RRX4SBcNDGUAk&callback=initMap">
+</script>
+
+	<script src="D:/web1/assets/script.js"></script>
+</body>
+</html>
